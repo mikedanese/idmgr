@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package plugin.gcp.api;
+
+service Metadata {
+  rpc GetToken(GetTokenRequest) returns (GetTokenResponse) {
+  }
+}
+
+message GetTokenRequest {
+}
+
+message GetTokenResponse {
+  string access_token = 1;
+}

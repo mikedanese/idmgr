@@ -1,0 +1,16 @@
+package: containers.google.com/idmgr
+import:
+- package: github.com/golang/glog
+- package: google.golang.org/grpc
+  version: ~1.4.0
+  subpackages:
+  - health
+- package: golang.org/x/net
+  version: dfe83d419c9403b40b19d08cdba2afec27b002f7
+  subpackages:
+  - context
+  - http2
+- package: golang.org/x/text
+  version: 3491b61b9edc56653ad4333e605e2908e46a036b
+  subpackages:
+  - secure/bidirule

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package pkg.api;
+
+service Management {
+  rpc CreateMetadata(CreateMetadataRequest) returns (CreateMetadataResponse) {
+  }
+
+  rpc DestroyMetadata(DestroyMetadataRequest)
+      returns (DestroyMetadataResponse) {
+  }
+}
+
+message CreateMetadataRequest {
+  string mount_path = 1;
+  string service_account = 2;
+}
+
+message CreateMetadataResponse {
+}
+
+message DestroyMetadataRequest {
+  string mount_path = 1;
+}
+
+message DestroyMetadataResponse {
+}
